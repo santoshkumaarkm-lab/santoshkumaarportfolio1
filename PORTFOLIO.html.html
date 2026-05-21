@@ -1,0 +1,717 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SANTOSHKUMAAR KUMARAPPA — AI Digital Marketer | Thanjavur, Tamil Nadu</title>
+<meta name="description" content="Portfolio of SANTOSHKUMAAR KUMARAPPA — AI-powered digital marketer from Thanjavur, Tamil Nadu. Best digital marketing: SEO, Facebook Ads, Social Media Management, AI Content & Automation.">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400;1,600&family=DM+Mono:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{
+  --bg:#05050a;--surf:#0b0b12;--card:#111118;
+  --bdr:rgba(255,255,255,.07);--w:#f3f1ed;
+  --m:rgba(243,241,237,.48);--d:rgba(243,241,237,.18);
+  --red:#c8410a;--grn:#25D366;--gld:#c4a962;
+  --ff:'Bebas Neue',sans-serif;
+  --fs:'Cormorant Garamond',Georgia,serif;
+  --fm:'DM Mono',monospace;
+}
+html{scroll-behavior:smooth}
+body{background:var(--bg);color:var(--w);font-family:var(--fm);overflow-x:hidden;cursor:none}
+a{color:inherit;text-decoration:none}
+img{display:block;max-width:100%}
+strong{color:var(--w);font-weight:500}
+
+/* NOISE */
+body::before{content:'';position:fixed;inset:0;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.9' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.04'/%3E%3C/svg%3E");
+  pointer-events:none;z-index:0;opacity:.4}
+
+/* CURSOR */
+#cr1{position:fixed;width:10px;height:10px;background:var(--red);border-radius:50%;pointer-events:none;z-index:9999;transform:translate(-50%,-50%);transition:width .15s,height .15s}
+#cr2{position:fixed;width:30px;height:30px;border:1px solid rgba(200,65,10,.5);border-radius:50%;pointer-events:none;z-index:9998;transform:translate(-50%,-50%);transition:all .09s}
+
+/* CANVAS */
+#cv{position:fixed;inset:0;pointer-events:none;z-index:0;opacity:.28}
+
+/* NAV */
+.nav{position:fixed;top:0;left:0;right:0;z-index:500;padding:18px 40px;display:flex;justify-content:space-between;align-items:center;transition:all .3s}
+.nav.s{background:rgba(5,5,10,.9);border-bottom:1px solid var(--bdr);backdrop-filter:blur(18px);padding:12px 40px}
+.nl{font-family:var(--ff);font-size:20px;letter-spacing:.1em}
+.nl b{color:var(--red)}
+.nr{display:flex;gap:22px;align-items:center}
+.nr a{font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--m);transition:color .2s}
+.nr a:hover{color:var(--w)}
+.nwa{padding:8px 16px;background:var(--grn);color:#fff!important;border-radius:2px;transition:all .2s!important}
+.nwa:hover{transform:translateY(-2px)!important;box-shadow:0 8px 20px rgba(37,211,102,.3)!important}
+.hbg{display:none;flex-direction:column;gap:5px;background:none;border:none;cursor:none;padding:4px}
+.hbg span{width:20px;height:1px;background:var(--m);display:block;transition:all .3s}
+.mob{display:none;position:fixed;inset:0;background:var(--bg);z-index:499;flex-direction:column;align-items:center;justify-content:center;gap:34px}
+.mob.o{display:flex}
+.mob a{font-family:var(--ff);font-size:52px;letter-spacing:.04em;color:var(--m);transition:color .2s}
+.mob a:hover{color:var(--w)}
+.mx{position:absolute;top:20px;right:24px;font-size:22px;background:none;border:none;color:var(--m);cursor:none}
+
+/* HERO */
+.hero{min-height:100vh;display:flex;align-items:center;padding:120px 40px 80px;position:relative;z-index:1;overflow:hidden}
+.hr1{position:absolute;right:-80px;top:50%;width:580px;height:580px;border-radius:50%;border:1px solid rgba(200,65,10,.07);animation:spin 38s linear infinite;pointer-events:none}
+.hr2{position:absolute;right:-40px;top:50%;width:400px;height:400px;border-radius:50%;border:1px solid rgba(200,65,10,.04);animation:spin 26s linear infinite reverse;pointer-events:none}
+@keyframes spin{from{transform:translateY(-50%) rotate(0deg)}to{transform:translateY(-50%) rotate(360deg)}}
+.hey{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--red);margin-bottom:20px;opacity:0;animation:fu .7s .1s forwards}
+.hh1{font-family:var(--ff);font-size:clamp(38px,7vw,92px);line-height:.92;letter-spacing:.02em;margin-bottom:20px;opacity:0;animation:fu .7s .25s forwards}
+.hh1 .go{color:transparent;-webkit-text-stroke:1px rgba(243,241,237,.18)}
+.solid{color:var(--w)}
+.hh1 .ac{color:var(--red)}
+.hd{font-size:14px;color:var(--m);line-height:1.9;max-width:450px;margin-bottom:34px;opacity:0;animation:fu .7s .4s forwards}
+.hbt{display:flex;gap:12px;flex-wrap:wrap;opacity:0;animation:fu .7s .55s forwards}
+.bp{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;background:var(--red);color:#fff;border-radius:2px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;transition:all .3s;position:relative;overflow:hidden}
+.bp::after{content:'';position:absolute;inset:0;background:rgba(255,255,255,.12);transform:translateX(-100%);transition:transform .3s}
+.bp:hover::after{transform:translateX(0)}
+.bp:hover{transform:translateY(-2px);box-shadow:0 12px 28px rgba(200,65,10,.4)}
+.bs{display:inline-flex;align-items:center;gap:8px;padding:13px 26px;background:transparent;color:var(--m);border:1px solid var(--bdr);border-radius:2px;font-size:11px;letter-spacing:.1em;text-transform:uppercase;transition:all .3s}
+.bs:hover{color:var(--w);border-color:rgba(255,255,255,.2)}
+.himg{position:absolute;right:8%;top:50%;transform:translateY(-50%);width:290px;height:390px;border-radius:3px;overflow:hidden;border:1px solid var(--bdr);opacity:0;animation:fi .9s .8s forwards;display:none}
+.himg img{width:100%;height:100%;object-fit:cover;object-position:top}
+.himg::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,transparent 55%,rgba(5,5,10,.9))}
+.hbdg{position:absolute;bottom:36px;right:8%;background:var(--card);border:1px solid var(--bdr);border-radius:3px;padding:12px 16px;display:flex;align-items:center;gap:10px;opacity:0;animation:fi .9s 1s forwards;display:none}
+.bdot{width:7px;height:7px;border-radius:50%;background:var(--grn);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(37,211,102,.45)}50%{box-shadow:0 0 0 7px rgba(37,211,102,0)}}
+.bdn{font-size:11px;font-weight:500;color:var(--w)}
+.bdr2{font-size:9px;color:var(--m)}
+.hsc{position:absolute;bottom:36px;left:40px;display:flex;flex-direction:column;align-items:center;gap:7px;opacity:0;animation:fi .9s 1.15s forwards}
+.sl{width:1px;height:52px;background:linear-gradient(to bottom,var(--red),transparent);animation:sd 2s infinite}
+@keyframes sd{0%{transform:scaleY(0);transform-origin:top}50%{transform:scaleY(1);transform-origin:top}51%{transform-origin:bottom}100%{transform:scaleY(0);transform-origin:bottom}}
+.st{font-size:9px;letter-spacing:.18em;text-transform:uppercase;color:var(--d);writing-mode:vertical-rl}
+
+/* MARQUEE */
+.mw{border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr);background:var(--surf);overflow:hidden;padding:15px 0;position:relative;z-index:1}
+.mq{display:flex;animation:mq 22s linear infinite;white-space:nowrap}
+.mi{padding:0 32px;font-family:var(--ff);font-size:16px;letter-spacing:.08em;color:var(--m);display:flex;align-items:center;gap:16px}
+.mi em{width:5px;height:5px;border-radius:50%;background:var(--red);flex-shrink:0;font-style:normal}
+@keyframes mq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+.sec{position:relative;z-index:1;padding:86px 40px}
+.sg{background:var(--surf);border-top:1px solid var(--bdr);border-bottom:1px solid var(--bdr)}
+.sl2{font-size:9px;letter-spacing:.22em;text-transform:uppercase;color:var(--red);margin-bottom:14px;display:block}
+.st2{font-family:var(--ff);font-size:clamp(36px,5.5vw,66px);line-height:1;letter-spacing:.02em;color:var(--w);margin-bottom:16px}
+.ghost{color:transparent;-webkit-text-stroke:1px rgba(243,241,237,.1)}
+.ssub{font-size:14px;color:var(--m);line-height:1.85;max-width:440px}
+.sh{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;flex-wrap:wrap;margin-bottom:48px}
+.sa{font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--m);border-bottom:1px solid var(--bdr);padding-bottom:3px;display:inline-flex;align-items:center;gap:5px;transition:all .2s}
+.sa:hover{color:var(--w);border-color:var(--red)}
+
+/* ABOUT */
+.ag{display:grid;grid-template-columns:1fr;gap:36px}
+.ai{width:100%;max-width:300px;margin:0 auto;aspect-ratio:3/4;border-radius:3px;overflow:hidden;border:1px solid var(--bdr)}
+.ai img{width:100%;height:100%;object-fit:cover;object-position:top}
+.at{font-family:var(--fs);font-size:clamp(22px,3.5vw,38px);font-style:italic;color:var(--w);line-height:1.2;margin-bottom:18px}
+.ap{font-size:14px;color:var(--m);line-height:1.9;margin-bottom:12px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin-top:18px}
+.chip{padding:5px 12px;border:1px solid var(--bdr);border-radius:100px;font-size:9px;letter-spacing:.08em;text-transform:uppercase;color:var(--m);transition:all .2s}
+.chip:hover{border-color:rgba(200,65,10,.35);color:var(--w);background:rgba(200,65,10,.07)}
+.chip.h{background:rgba(200,65,10,.1);border-color:rgba(200,65,10,.35);color:var(--red)}
+.stats{display:grid;grid-template-columns:repeat(2,1fr);gap:1px;background:var(--bdr);border:1px solid var(--bdr);margin-top:36px}
+.stat{background:var(--bg);padding:22px 18px}
+.sn{font-family:var(--ff);font-size:42px;line-height:1;color:var(--w)}
+.sn em{font-style:normal;font-size:20px;color:var(--red)}
+.sl3{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--m);margin-top:4px}
+
+/* SKILLS */
+.skg{display:grid;grid-template-columns:1fr;gap:16px}
+.skr .skt{display:flex;justify-content:space-between;margin-bottom:5px}
+.skn{font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--w)}
+.skp{font-size:10px;color:var(--red)}
+.skb{height:1.5px;background:var(--bdr)}
+.skf{height:100%;background:linear-gradient(90deg,var(--red),rgba(200,65,10,.35));width:0;transition:width 1.3s ease}
+
+/* PROJECTS */
+.pg{display:grid;grid-template-columns:1fr;gap:1px;background:var(--bdr);border:1px solid var(--bdr)}
+.pc{background:var(--card);padding:26px;position:relative;overflow:hidden;cursor:pointer;transition:background .3s}
+.pc::before{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:var(--red);transform:scaleX(0);transform-origin:left;transition:transform .35s}
+.pc:hover{background:var(--surf)}
+.pc:hover::before{transform:scaleX(1)}
+.pn{font-family:var(--ff);font-size:34px;color:rgba(255,255,255,.05);line-height:1;margin-bottom:7px}
+.pt{font-size:9px;letter-spacing:.14em;text-transform:uppercase;color:var(--red);margin-bottom:7px}
+.ptit{font-family:var(--fs);font-size:clamp(16px,2.2vw,22px);font-style:italic;color:var(--w);line-height:1.3;margin-bottom:9px}
+.pd{font-size:13px;color:var(--m);line-height:1.8;margin-bottom:12px}
+.pills{display:flex;flex-wrap:wrap;gap:5px;margin-bottom:12px}
+.pill{padding:3px 8px;border:1px solid var(--bdr);border-radius:100px;font-size:9px;letter-spacing:.05em;text-transform:uppercase;color:var(--d)}
+.pr{display:flex;align-items:center;gap:7px;padding:8px 12px;background:rgba(200,65,10,.05);border-left:2px solid var(--red);font-size:12px;color:var(--m)}
+.pa{position:absolute;top:26px;right:26px;width:26px;height:26px;border:1px solid var(--bdr);border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:10px;color:var(--m);transition:all .3s}
+.pc:hover .pa{background:var(--red);border-color:var(--red);color:#fff;transform:rotate(45deg)}
+
+/* SERVICES */
+.svcg{display:grid;grid-template-columns:1fr;gap:10px}
+.svc{border:1px solid var(--bdr);padding:20px;display:flex;align-items:flex-start;gap:14px;transition:all .3s;border-radius:2px;position:relative;overflow:hidden}
+.svc::after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(200,65,10,.04),transparent);opacity:0;transition:opacity .3s}
+.svc:hover{border-color:rgba(200,65,10,.28);background:var(--surf)}
+.svc:hover::after{opacity:1}
+.sic{width:36px;height:36px;background:rgba(200,65,10,.07);border:1px solid rgba(200,65,10,.18);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:16px;flex-shrink:0}
+.svn{font-size:9px;color:var(--red);letter-spacing:.1em;margin-bottom:3px}
+.svnm{font-size:13px;font-weight:500;color:var(--w);margin-bottom:3px}
+.svd{font-size:12px;color:var(--m);line-height:1.7}
+
+/* TIMELINE */
+.tl{position:relative;display:flex;flex-direction:column}
+.tl::before{content:'';position:absolute;left:13px;top:13px;bottom:13px;width:1px;background:linear-gradient(to bottom,var(--red),transparent)}
+.ti{display:flex;gap:22px;padding-bottom:34px;position:relative;z-index:1}
+.td{width:26px;height:26px;border-radius:50%;background:var(--card);border:1px solid var(--bdr);display:flex;align-items:center;justify-content:center;flex-shrink:0;font-size:10px;color:var(--m)}
+.ti.on .td{background:rgba(200,65,10,.1);border-color:var(--red);color:var(--red)}
+.ty{font-size:9px;color:var(--m);letter-spacing:.07em;margin-bottom:3px}
+.tt{font-size:14px;font-weight:500;color:var(--w);margin-bottom:2px}
+.tc{font-size:11px;color:var(--red);margin-bottom:6px}
+.tdesc{font-size:12px;color:var(--m);line-height:1.75}
+
+/* CERTS */
+.cg{display:grid;grid-template-columns:1fr;gap:8px}
+.cert{border:1px solid var(--bdr);padding:14px 18px;display:flex;align-items:center;gap:12px;transition:all .3s;border-radius:2px}
+.cert:hover{border-color:rgba(200,65,10,.3);background:var(--surf)}
+.cic{width:30px;height:30px;background:rgba(200,65,10,.07);border:1px solid rgba(200,65,10,.18);border-radius:2px;display:flex;align-items:center;justify-content:center;font-size:12px;flex-shrink:0}
+.cnm{font-size:12px;color:var(--w);margin-bottom:2px}
+.cby{font-size:9px;color:var(--m);letter-spacing:.04em}
+
+/* TESTS */
+.tg{display:grid;grid-template-columns:1fr;gap:14px}
+.tc2{border:1px solid var(--bdr);padding:24px;background:var(--card);position:relative;overflow:hidden;border-radius:2px}
+.tc2::before{content:'"';position:absolute;top:-8px;left:14px;font-family:var(--fs);font-size:90px;color:rgba(200,65,10,.05);line-height:1;pointer-events:none}
+.tstar{color:var(--gld);font-size:11px;letter-spacing:3px;margin-bottom:11px}
+.ttxt{font-size:14px;color:var(--m);line-height:1.85;margin-bottom:14px;font-family:var(--fs);font-style:italic}
+.tname{font-size:11px;color:var(--w);letter-spacing:.05em}
+.trole{font-size:9px;color:var(--d);margin-top:2px}
+
+/* TOOLS */
+.tools{display:flex;flex-wrap:wrap;gap:7px}
+.tool{padding:6px 13px;border:1px solid var(--bdr);border-radius:2px;font-size:10px;letter-spacing:.04em;color:var(--m);display:flex;align-items:center;gap:5px;transition:all .2s}
+.tool:hover{border-color:var(--red);color:var(--w);background:rgba(200,65,10,.06)}
+.td2{width:4px;height:4px;border-radius:50%;background:var(--red);flex-shrink:0}
+
+/* SOCIALS GRID */
+.socg{display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:20px}
+.socbtn{border:1px solid var(--bdr);border-radius:2px;padding:14px 16px;display:flex;align-items:center;gap:10px;transition:all .2s}
+.socbtn:hover{border-color:rgba(200,65,10,.3);background:var(--surf)}
+.socic{font-size:20px;flex-shrink:0}
+.socnm{font-size:12px;font-weight:500;color:var(--w)}
+.soch{font-size:10px;color:var(--m)}
+
+/* CTA */
+.cta{position:relative;z-index:1;padding:88px 40px;background:var(--surf);border-top:1px solid var(--bdr);text-align:center;overflow:hidden}
+.ctabg{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%);font-family:var(--ff);font-size:clamp(70px,16vw,210px);color:transparent;-webkit-text-stroke:1px rgba(255,255,255,.025);white-space:nowrap;pointer-events:none;user-select:none}
+.ctat{font-family:var(--ff);font-size:clamp(36px,7vw,86px);line-height:.98;color:var(--w);letter-spacing:.02em;margin-bottom:14px;position:relative}
+.ctat .ac{color:var(--red)}
+.ctasub{font-size:15px;color:var(--m);margin-bottom:30px;line-height:1.7;position:relative}
+.ctabt{display:flex;justify-content:center;gap:12px;flex-wrap:wrap;position:relative}
+.bwa{display:inline-flex;align-items:center;gap:8px;padding:15px 30px;background:var(--grn);color:#fff;border-radius:2px;font-size:12px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;transition:all .3s}
+.bwa:hover{transform:translateY(-3px);box-shadow:0 14px 36px rgba(37,211,102,.32)}
+
+/* FOOTER */
+.ft{position:relative;z-index:1;padding:38px 40px;border-top:1px solid var(--bdr)}
+.ftr{display:flex;flex-direction:column;gap:18px;margin-bottom:22px}
+.flo{font-family:var(--ff);font-size:18px;letter-spacing:.1em}
+.flo b{color:var(--red)}
+.flinks{display:flex;flex-wrap:wrap;gap:14px}
+.flinks a{font-size:9px;letter-spacing:.12em;text-transform:uppercase;color:var(--m);transition:color .2s}
+.flinks a:hover{color:var(--w)}
+.fsoc{display:flex;flex-wrap:wrap;gap:7px;margin-bottom:18px}
+.fsb{padding:5px 12px;border:1px solid var(--bdr);border-radius:100px;font-size:9px;letter-spacing:.05em;text-transform:uppercase;color:var(--m);display:flex;align-items:center;gap:4px;transition:all .2s}
+.fsb:hover{border-color:var(--red);color:var(--w)}
+.fcp{font-size:9px;letter-spacing:.06em;color:var(--d)}
+
+/* ANIMS */
+@keyframes fu{from{opacity:0;transform:translateY(26px)}to{opacity:1;transform:translateY(0)}}
+@keyframes fi{from{opacity:0}to{opacity:1}}
+.rv{opacity:0;transform:translateY(32px);transition:opacity .65s,transform .65s}
+.rv.v{opacity:1;transform:translateY(0)}
+.rvl{opacity:0;transform:translateX(-32px);transition:opacity .65s,transform .65s}
+.rvl.v{opacity:1;transform:translateX(0)}
+
+/* RESPONSIVE */
+@media(min-width:768px){
+  .himg,.hbdg{display:block}
+  .ag{grid-template-columns:1fr 1.5fr;gap:50px;align-items:start}
+  .ai{max-width:none;margin:0}
+  .skg{grid-template-columns:1fr 1fr;gap:16px}
+  .pg{grid-template-columns:1fr 1fr}
+  .svcg{grid-template-columns:1fr 1fr}
+  .cg{grid-template-columns:1fr 1fr}
+  .tg{grid-template-columns:1fr 1fr 1fr}
+  .stats{grid-template-columns:repeat(4,1fr)}
+  .socg{grid-template-columns:repeat(4,1fr)}
+  .ftr{flex-direction:row;justify-content:space-between;align-items:center}
+}
+@media(max-width:767px){
+  .nav{padding:14px 20px}.nav.s{padding:10px 20px}
+  .nr{display:none}.hbg{display:flex}
+  .hero{padding:96px 20px 60px}
+  .hsc{left:20px;bottom:20px}
+  .sec{padding:60px 20px}
+  .cta{padding:60px 20px}
+  .ft{padding:30px 20px}
+}
+</style>
+</head>
+<body>
+
+<div id="cr1"></div>
+<div id="cr2"></div>
+<canvas id="cv"></canvas>
+
+<!-- NAV -->
+<nav class="nav" id="nav">
+  <div class="nl">SK<b>.</b></div>
+  <div class="nr">
+    <a href="#about">About</a>
+    <a href="#projects">Work</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+    <a href="https://wa.me/919003469996" target="_blank" class="nwa">&#x1F4AC; WhatsApp</a>
+  </div>
+  <button class="hbg" id="hbg"><span></span><span></span><span></span></button>
+</nav>
+
+<!-- MOBILE MENU -->
+<div class="mob" id="mob">
+  <button class="mx" id="mx">&#10005;</button>
+  <a href="#about" onclick="cm()">About</a>
+  <a href="#projects" onclick="cm()">Work</a>
+  <a href="#services" onclick="cm()">Services</a>
+  <a href="#contact" onclick="cm()">Contact</a>
+  <a href="https://wa.me/919003469996" target="_blank" onclick="cm()">WhatsApp</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="home">
+  <div class="hr1"></div>
+  <div class="hr2"></div>
+  <div>
+    <p class="hey">&#x2B23; AI Digital Marketer &bull; Thanjavur, Tamil Nadu &bull; India</p>
+    <h1 class="hh1">
+      SANTOSH<span class="solid">KUMAAR</span><br>
+      <span class="go">KUMAR</span><span class="ac">APPA</span>
+    </h1>
+    <p class="hd">AI-first digital marketer delivering the <strong>best digital marketing in Thanjavur</strong> &mdash; SEO, Facebook Ads, social media management, AI content strategy &amp; marketing automation. Trained at <strong>Digital Scholar</strong>. Open to opportunities.</p>
+    <div class="hbt">
+      <a href="#projects" class="bp">View my work &rarr;</a>
+      <a href="https://wa.me/919003469996" target="_blank" class="bs">&#x1F4AC; WhatsApp 9003469996</a>
+    </div>
+  </div>
+  <div class="himg">
+    <img src="https://santoshkumaarkumarappa.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-17-at-3.12.32-PM.jpeg" alt="SANTOSHKUMAAR KUMARAPPA — AI Digital Marketer Thanjavur">
+  </div>
+  <div class="hbdg">
+    <div class="bdot"></div>
+    <div><p class="bdn">Open to opportunities</p><p class="bdr2">Digital Marketing &bull; Thanjavur</p></div>
+  </div>
+  <div class="hsc">
+    <span class="st">Scroll</span>
+    <div class="sl"></div>
+  </div>
+</section>
+
+<!-- MARQUEE -->
+<div class="mw">
+  <div class="mq">
+    <span class="mi">SANTOSHKUMAAR KUMARAPPA <em></em></span>
+    <span class="mi">Best Digital Marketing Thanjavur <em></em></span>
+    <span class="mi">SEO Expert Tamil Nadu <em></em></span>
+    <span class="mi">Social Media Management <em></em></span>
+    <span class="mi">Facebook Ads Specialist <em></em></span>
+    <span class="mi">AI Content Strategy <em></em></span>
+    <span class="mi">Marketing Automation <em></em></span>
+    <span class="mi">Digital Scholar Alumni <em></em></span>
+    <span class="mi">SANTOSHKUMAAR KUMARAPPA <em></em></span>
+    <span class="mi">Best Digital Marketing Thanjavur <em></em></span>
+    <span class="mi">SEO Expert Tamil Nadu <em></em></span>
+    <span class="mi">Social Media Management <em></em></span>
+    <span class="mi">Facebook Ads Specialist <em></em></span>
+    <span class="mi">AI Content Strategy <em></em></span>
+    <span class="mi">Marketing Automation <em></em></span>
+    <span class="mi">Digital Scholar Alumni <em></em></span>
+  </div>
+</div>
+
+<!-- ABOUT -->
+<section class="sec" id="about">
+  <div class="ag">
+    <div class="ai rvl">
+      <img src="https://santoshkumaarkumarappa.com/wp-content/uploads/2026/04/WhatsApp-Image-2026-04-17-at-3.12.32-PM.jpeg" alt="SANTOSHKUMAAR KUMARAPPA — Best Digital Marketing Thanjavur">
+    </div>
+    <div>
+      <span class="sl2 rv">01 &mdash; About</span>
+      <h2 class="at rv">AI-powered &amp; results-driven &mdash;<br>the best digital marketing<br>in Thanjavur.</h2>
+      <p class="ap rv">I&rsquo;m <strong>SANTOSHKUMAAR KUMARAPPA (KM Santosh Kumaar)</strong> &mdash; an AI-first digital marketer based in Thanjavur, Tamil Nadu. I provide the best digital marketing in Thanjavur for local businesses, startups, and brands by combining agency-trained skills with cutting-edge AI tools to deliver measurable, real growth.</p>
+      <p class="ap rv">Trained at <strong>Digital Scholar</strong> &mdash; India&rsquo;s leading agency-style digital marketing institute. Before that, built my results-first instincts in B2B sales at <strong>Macmillan Education India</strong> &mdash; learning exactly what drives people to buy.</p>
+      <p class="ap rv"><strong>Education:</strong> BSc Nutrition and Dietetics &mdash; Bishop Heber College, Trichy (CGPA: 7.78)<br><strong>Email:</strong> santoshkumaarkm@gmail.com &nbsp;&bull;&nbsp; <strong>WhatsApp:</strong> 9003469996<br><strong>Location:</strong> Thanjavur, Tamil Nadu, India</p>
+      <div class="chips rv">
+        <span class="chip h">Best Digital Marketing Thanjavur</span>
+        <span class="chip">SEO Expert</span>
+        <span class="chip">Facebook Ads</span>
+        <span class="chip">Social Media Management</span>
+        <span class="chip">AI Content</span>
+        <span class="chip">Marketing Automation</span>
+        <span class="chip">Google Ads</span>
+        <span class="chip">Digital Scholar Alumni</span>
+        <span class="chip">Macmillan Education</span>
+        <span class="chip">Thanjavur, Tamil Nadu</span>
+      </div>
+      <div class="stats rv">
+        <div class="stat"><div class="sn"><span class="cnt" data-t="6">0</span><em>+</em></div><div class="sl3">Projects</div></div>
+        <div class="stat"><div class="sn"><span class="cnt" data-t="5">0</span><em>+</em></div><div class="sl3">Clients</div></div>
+        <div class="stat"><div class="sn"><span class="cnt" data-t="4">0</span></div><div class="sl3">Months training</div></div>
+        <div class="stat"><div class="sn"><span class="cnt" data-t="20">0</span><em>+</em></div><div class="sl3">Certifications</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section class="sec sg">
+  <div class="sh rv">
+    <div>
+      <span class="sl2">02 &mdash; Skills</span>
+      <h2 class="st2">What I&rsquo;m <span class="ghost">great</span> at</h2>
+    </div>
+    <p class="ssub">Sharpened through real campaigns at Digital Scholar &mdash; the best digital marketing training in India.</p>
+  </div>
+  <div class="skg rv" id="skg">
+    <div class="skr"><div class="skt"><span class="skn">SEO &amp; Local SEO</span><span class="skp">92%</span></div><div class="skb"><div class="skf" data-w="92"></div></div></div>
+    <div class="skr"><div class="skt"><span class="skn">Social Media Management</span><span class="skp">90%</span></div><div class="skb"><div class="skf" data-w="90"></div></div></div>
+    <div class="skr"><div class="skt"><span class="skn">Facebook &amp; Instagram Ads</span><span class="skp">88%</span></div><div class="skb"><div class="skf" data-w="88"></div></div></div>
+    <div class="skr"><div class="skt"><span class="skn">AI Content Strategy</span><span class="skp">93%</span></div><div class="skb"><div class="skf" data-w="93"></div></div></div>
+    <div class="skr"><div class="skt"><span class="skn">Google Ads &amp; PPC</span><span class="skp">82%</span></div><div class="skb"><div class="skf" data-w="82"></div></div></div>
+    <div class="skr"><div class="skt"><span class="skn">Marketing Automation</span><span class="skp">85%</span></div><div class="skb"><div class="skf" data-w="85"></div></div></div>
+    <div class="skr"><div class="skt"><span class="skn">Email Marketing</span><span class="skp">80%</span></div><div class="skb"><div class="skf" data-w="80"></div></div></div>
+    <div class="skr"><div class="skt"><span class="skn">B2B Sales &amp; Communication</span><span class="skp">95%</span></div><div class="skb"><div class="skf" data-w="95"></div></div></div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section class="sec" id="projects">
+  <div class="sh rv">
+    <div>
+      <span class="sl2">03 &mdash; Work</span>
+      <h2 class="st2">Selected <span class="ghost">projects</span></h2>
+    </div>
+    <a href="https://santoshkumaarkumarappa.com" class="sa" target="_blank">Full website &#x2197;</a>
+  </div>
+  <div class="pg">
+
+    <div class="pc rv">
+      <div class="pa">&#x2197;</div>
+      <div class="pn">01</div>
+      <div class="pt">SEO &bull; Local Marketing &bull; Thanjavur</div>
+      <h3 class="ptit">Thanjavur Sweets &amp; Bakery &mdash; Google Page 1 Rankings</h3>
+      <p class="pd">Full local SEO campaign for a traditional sweet shop in Thanjavur. Google Business Profile optimisation, AI keyword targeting, and monthly content strategy to dominate local search results in Thanjavur and Trichy.</p>
+      <div class="pills"><span class="pill">Local SEO</span><span class="pill">Google Business</span><span class="pill">AI Content</span><span class="pill">Ahrefs</span></div>
+      <div class="pr">&#x1F4C8; <strong>+320% organic traffic</strong> &bull; Ranked #1 for 12 local keywords in 3 months</div>
+    </div>
+
+    <div class="pc rv">
+      <div class="pa">&#x2197;</div>
+      <div class="pn">02</div>
+      <div class="pt">Facebook Ads &bull; Lead Generation &bull; Tamil Nadu</div>
+      <h3 class="ptit">Trichy Clinic &mdash; Facebook Ads Lead Generation Campaign</h3>
+      <p class="pd">Designed and managed a complete Facebook and Instagram Ads campaign for a multi-specialty clinic near Thanjavur. AI-generated ad creatives, targeted health-conscious audiences across Tamil Nadu, full retargeting funnel.</p>
+      <div class="pills"><span class="pill">Meta Ads</span><span class="pill">Midjourney</span><span class="pill">Retargeting</span><span class="pill">ChatGPT</span></div>
+      <div class="pr">&#x1F4C8; <strong>62% lower CPA</strong> &bull; 47 qualified leads in the first month</div>
+    </div>
+
+    <div class="pc rv">
+      <div class="pa">&#x2197;</div>
+      <div class="pn">03</div>
+      <div class="pt">Social Media Management &bull; Instagram &bull; Facebook</div>
+      <h3 class="ptit">Kumbakonam Restaurant &mdash; Full Social Media Management</h3>
+      <p class="pd">Complete social media management for a family-run restaurant. Daily Instagram posts, reels, stories, Facebook updates, monthly content calendar, and engagement management. Grew followers from zero to an active community.</p>
+      <div class="pills"><span class="pill">Instagram</span><span class="pill">Facebook</span><span class="pill">Reels</span><span class="pill">Canva AI</span></div>
+      <div class="pr">&#x1F4C8; <strong>Instagram grew 5&times; in 2 months</strong> &bull; 38% increase in weekend bookings</div>
+    </div>
+
+    <div class="pc rv">
+      <div class="pa">&#x2197;</div>
+      <div class="pn">04</div>
+      <div class="pt">AI Content &bull; SEO Blog Strategy &bull; EdTech</div>
+      <h3 class="ptit">Chennai EdTech Startup &mdash; AI Content &amp; SEO Strategy</h3>
+      <p class="pd">Built a comprehensive AI-powered content marketing strategy for an EdTech startup in Chennai. Used ChatGPT for blog writing, Surfer SEO for optimisation, and Ahrefs for keyword research. 16 SEO articles over 4 months.</p>
+      <div class="pills"><span class="pill">ChatGPT</span><span class="pill">Surfer SEO</span><span class="pill">Ahrefs</span><span class="pill">WordPress</span></div>
+      <div class="pr">&#x1F4C8; <strong>+180% organic sessions</strong> &bull; 9 keywords on Google Page 1</div>
+    </div>
+
+    <div class="pc rv">
+      <div class="pa">&#x2197;</div>
+      <div class="pn">05</div>
+      <div class="pt">Marketing Automation &bull; Email &bull; WhatsApp</div>
+      <h3 class="ptit">Madurai Boutique &mdash; Email &amp; WhatsApp Automation System</h3>
+      <p class="pd">Designed a complete marketing automation system using Mailchimp and Zapier. Built welcome sequences, cart abandonment flows, WhatsApp broadcast lists, and weekly newsletter campaigns that run fully automatically.</p>
+      <div class="pills"><span class="pill">Zapier</span><span class="pill">Mailchimp</span><span class="pill">WhatsApp API</span><span class="pill">HubSpot</span></div>
+      <div class="pr">&#x1F4C8; <strong>42% email open rate</strong> &bull; 18% repeat purchase increase</div>
+    </div>
+
+    <div class="pc rv">
+      <div class="pa">&#x2197;</div>
+      <div class="pn">06</div>
+      <div class="pt">Personal Branding &bull; SEO &bull; Portfolio</div>
+      <h3 class="ptit">SANTOSHKUMAAR KUMARAPPA &mdash; Personal Brand &amp; SEO Portfolio</h3>
+      <p class="pd">Built and ranked personal digital marketing portfolio website targeting "best digital marketing in Thanjavur." Complete SEO, 14-post blog, social media presence across 8 platforms, Google Business Profile &mdash; 100% AI-powered.</p>
+      <div class="pills"><span class="pill">WordPress</span><span class="pill">Rank Math</span><span class="pill">ChatGPT</span><span class="pill">Local SEO</span></div>
+      <div class="pr">&#x1F4C8; <strong>Ranking for "best digital marketing in Thanjavur"</strong> &bull; 14 blog posts live</div>
+    </div>
+
+  </div>
+</section>
+
+<!-- SERVICES -->
+<section class="sec sg" id="services">
+  <div class="sh rv">
+    <div>
+      <span class="sl2">04 &mdash; Services</span>
+      <h2 class="st2">What I <span class="ghost">offer</span></h2>
+    </div>
+    <a href="https://santoshkumaarkumarappa.com/digital-marketing-services-in-thanjavur-santoshkumaar/" class="sa" target="_blank">Full services &#x2197;</a>
+  </div>
+  <div class="svcg">
+    <div class="svc rv"><div class="sic">&#x1F4F1;</div><div><div class="svn">01</div><div class="svnm">Social Media Management</div><div class="svd">Complete social media management &mdash; Instagram, Facebook, LinkedIn, YouTube. Daily posts, reels, stories, engagement &amp; growth analytics.</div></div></div>
+    <div class="svc rv"><div class="sic">&#x1F50D;</div><div><div class="svn">02</div><div class="svnm">SEO &amp; Local SEO Thanjavur</div><div class="svd">Google Page 1 rankings using AI keyword research, on-page, technical &amp; local SEO. Google Business Profile optimisation.</div></div></div>
+    <div class="svc rv"><div class="sic">&#x1F4E2;</div><div><div class="svn">03</div><div class="svnm">Facebook &amp; Instagram Ads</div><div class="svd">AI-optimised Meta Ads campaigns &mdash; audience targeting, creative testing, low CPA and high ROAS performance advertising.</div></div></div>
+    <div class="svc rv"><div class="sic">&#x1F4CA;</div><div><div class="svn">04</div><div class="svnm">Google Ads Management</div><div class="svd">Search, Display &amp; YouTube ad campaigns. AI-powered keyword bidding, ad copy testing, and conversion optimisation.</div></div></div>
+    <div class="svc rv"><div class="sic">&#x1F916;</div><div><div class="svn">05</div><div class="svnm">AI Content Strategy</div><div class="svd">ChatGPT &amp; Midjourney-powered content &mdash; blog posts, ad copy, social captions, email sequences, and website copy at scale.</div></div></div>
+    <div class="svc rv"><div class="sic">&#x2699;&#xFE0F;</div><div><div class="svn">06</div><div class="svnm">Marketing Automation</div><div class="svd">Zapier, Make &amp; HubSpot workflows saving 10+ hours per week &mdash; lead nurturing, email sequences, CRM integration &amp; WhatsApp automation.</div></div></div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section class="sec">
+  <div class="sh rv">
+    <div>
+      <span class="sl2">05 &mdash; Journey</span>
+      <h2 class="st2">My <span class="ghost">story</span></h2>
+    </div>
+  </div>
+  <div class="tl">
+    <div class="ti rv"><div class="td">&#x1F393;</div><div>
+      <div class="ty">2016 &ndash; 2022</div>
+      <div class="tt">Education</div>
+      <div class="tc">Kamala Subramaniam School &rarr; Bishop Heber College, Trichy</div>
+      <div class="tdesc">Completed SSLC and Higher Secondary at Kamala Subramaniam School, Thanjavur. Pursued <strong>BSc Nutrition and Dietetics</strong> at Bishop Heber College, Trichy &mdash; CGPA: 7.78. Built strong analytical thinking, time management, and communication skills.</div>
+    </div></div>
+    <div class="ti rv"><div class="td">&#x1F4BC;</div><div>
+      <div class="ty">Nov 2022 &ndash; Jul 2023</div>
+      <div class="tt">Regional Sales Executive</div>
+      <div class="tc">Macmillan Education India Pvt. Ltd &bull; Thanjavur</div>
+      <div class="tdesc">High-stakes B2B sales &mdash; consistently exceeded sales targets, developed and executed market share strategies, built strong client relationships, negotiated high-value contracts, and recognised as a top performer. This results-first mindset now powers every digital marketing strategy I build.</div>
+    </div></div>
+    <div class="ti rv"><div class="td">&#x1F680;</div><div>
+      <div class="ty">2025 &ndash; 2026</div>
+      <div class="tt">Advanced AI Marketing Program</div>
+      <div class="tc">Digital Scholar &bull; Chennai (Agency-style training)</div>
+      <div class="tdesc">Completed an intensive 4-month agency-style digital marketing program at Digital Scholar &mdash; India&rsquo;s leading marketing institute. Mastered SEO, Facebook Ads, Google Ads, social media management, AI content strategy, marketing automation, and brand strategy through real client campaigns.</div>
+    </div></div>
+    <div class="ti on rv"><div class="td">&#x2B23;</div><div>
+      <div class="ty">Now &bull; 2026</div>
+      <div class="tt">Freelance Digital Marketer &bull; Open to Full-time Opportunities</div>
+      <div class="tc">SANTOSHKUMAAR KUMARAPPA &bull; Thanjavur, Tamil Nadu &bull; 9003469996</div>
+      <div class="tdesc">Actively delivering the best digital marketing in Thanjavur &mdash; SEO, social media management, Facebook Ads, AI content, and marketing automation for local businesses and brands. Open to freelance projects and full-time digital marketing roles across Tamil Nadu and India. WhatsApp <strong>9003469996</strong>.</div>
+    </div></div>
+  </div>
+</section>
+
+<!-- CERTIFICATIONS -->
+<section class="sec sg">
+  <div class="sh rv">
+    <div>
+      <span class="sl2">06 &mdash; Credentials</span>
+      <h2 class="st2">Certifications <span class="ghost">&amp; training</span></h2>
+    </div>
+  </div>
+  <div class="cg">
+    <div class="cert rv"><div class="cic">&#x1F3C5;</div><div><div class="cnm">Social Media Marketing for Small Business</div><div class="cby">LinkedIn Learning &bull; 2025</div></div></div>
+    <div class="cert rv"><div class="cic">&#x1F3C5;</div><div><div class="cnm">Social Media Marketing: Strategy and Optimization</div><div class="cby">LinkedIn Learning &bull; 2025</div></div></div>
+    <div class="cert rv"><div class="cic">&#x1F3C5;</div><div><div class="cnm">Advanced Business Development: Communication &amp; Negotiation</div><div class="cby">LinkedIn Learning &bull; 2025</div></div></div>
+    <div class="cert rv"><div class="cic">&#x1F3C5;</div><div><div class="cnm">Value Education and Personality Development Program</div><div class="cby">Bishop Heber College &bull; 2022</div></div></div>
+    <div class="cert rv"><div class="cic">&#x1F393;</div><div><div class="cnm">AI-Powered Digital Marketing &amp; Business Leadership</div><div class="cby">Digital Scholar &bull; 2026</div></div></div>
+    <div class="cert rv"><div class="cic">&#x1F393;</div><div><div class="cnm">Advanced SEO &amp; Content Marketing</div><div class="cby">Digital Scholar &bull; 2026</div></div></div>
+    <div class="cert rv"><div class="cic">&#x1F393;</div><div><div class="cnm">Facebook &amp; Google Ads Mastery</div><div class="cby">Digital Scholar &bull; 2026</div></div></div>
+    <div class="cert rv"><div class="cic">&#x1F393;</div><div><div class="cnm">Marketing Automation &amp; AI Tools</div><div class="cby">Digital Scholar &bull; 2026</div></div></div>
+  </div>
+</section>
+
+<!-- TESTIMONIALS -->
+<section class="sec">
+  <div class="sh rv">
+    <div>
+      <span class="sl2">07 &mdash; Reviews</span>
+      <h2 class="st2">What clients <span class="ghost">say</span></h2>
+    </div>
+  </div>
+  <div class="tg">
+    <div class="tc2 rv">
+      <div class="tstar">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="ttxt">&ldquo;SANTOSHKUMAAR KUMARAPPA delivers the best digital marketing in Thanjavur. Our Google ranking improved dramatically after 60 days. Organic traffic tripled. Highly recommend!&rdquo;</p>
+      <div class="tname">Ramesh K.</div><div class="trole">Owner &bull; Thanjavur Sweets &amp; Bakery</div>
+    </div>
+    <div class="tc2 rv">
+      <div class="tstar">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="ttxt">&ldquo;The social media management completely transformed how our brand looks online. Instagram grew 5&times; in 2 months. Customers literally say they found us on Instagram.&rdquo;</p>
+      <div class="tname">Priya S.</div><div class="trole">Owner &bull; Kumbakonam Restaurant</div>
+    </div>
+    <div class="tc2 rv">
+      <div class="tstar">&#9733;&#9733;&#9733;&#9733;&#9733;</div>
+      <p class="ttxt">&ldquo;The Facebook Ads campaign brought 47 qualified leads in the first month alone. Professional, transparent, and genuinely results-driven. Best investment we&rsquo;ve made in digital marketing.&rdquo;</p>
+      <div class="tname">Dr. Anand V.</div><div class="trole">Director &bull; Trichy Multi-specialty Clinic</div>
+    </div>
+  </div>
+</section>
+
+<!-- TOOLS -->
+<section class="sec sg" style="padding-top:52px;padding-bottom:52px">
+  <span class="sl2 rv">08 &mdash; Arsenal</span>
+  <p style="font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--m);margin-bottom:18px" class="rv">AI &amp; marketing tools I use daily</p>
+  <div class="tools rv">
+    <span class="tool"><span class="td2"></span>ChatGPT</span>
+    <span class="tool"><span class="td2"></span>Midjourney</span>
+    <span class="tool"><span class="td2"></span>Ahrefs</span>
+    <span class="tool"><span class="td2"></span>SEMrush</span>
+    <span class="tool"><span class="td2"></span>Surfer SEO</span>
+    <span class="tool"><span class="td2"></span>Google Ads</span>
+    <span class="tool"><span class="td2"></span>Meta Ads Manager</span>
+    <span class="tool"><span class="td2"></span>Google Analytics 4</span>
+    <span class="tool"><span class="td2"></span>Search Console</span>
+    <span class="tool"><span class="td2"></span>Zapier</span>
+    <span class="tool"><span class="td2"></span>Make</span>
+    <span class="tool"><span class="td2"></span>HubSpot</span>
+    <span class="tool"><span class="td2"></span>Mailchimp</span>
+    <span class="tool"><span class="td2"></span>Buffer</span>
+    <span class="tool"><span class="td2"></span>Hootsuite</span>
+    <span class="tool"><span class="td2"></span>Canva AI</span>
+    <span class="tool"><span class="td2"></span>Rank Math SEO</span>
+    <span class="tool"><span class="td2"></span>WordPress</span>
+    <span class="tool"><span class="td2"></span>WhatsApp Business</span>
+  </div>
+</section>
+
+<!-- SOCIAL MEDIA LINKS -->
+<section class="sec" style="padding-top:52px;padding-bottom:52px">
+  <span class="sl2 rv">09 &mdash; Find me online</span>
+  <h2 class="st2 rv">All <span class="ghost">platforms</span></h2>
+  <div class="socg rv">
+    <a href="https://www.instagram.com/santoshkumaarkm" target="_blank" class="socbtn"><span class="socic">&#x1F4F8;</span><div><p class="socnm">Instagram</p><p class="soch">@santoshkumaarkm</p></div></a>
+    <a href="https://www.linkedin.com/in/km-santosh-kumaar-850202235" target="_blank" class="socbtn"><span class="socic">&#x1F4BC;</span><div><p class="socnm">LinkedIn</p><p class="soch">km-santosh-kumaar</p></div></a>
+    <a href="https://www.youtube.com/@SANTOSHKUMAAR03" target="_blank" class="socbtn"><span class="socic">&#x25B6;&#xFE0F;</span><div><p class="socnm">YouTube</p><p class="soch">@SANTOSHKUMAAR03</p></div></a>
+    <a href="https://www.facebook.com/share/1AqojXPubv/" target="_blank" class="socbtn"><span class="socic">&#x1F4D8;</span><div><p class="socnm">Facebook</p><p class="soch">SANTOSHKUMAAR KUMARAPPA</p></div></a>
+    <a href="https://medium.com/@santoshkumaarkm" target="_blank" class="socbtn"><span class="socic">&#x270D;&#xFE0F;</span><div><p class="socnm">Medium</p><p class="soch">@santoshkumaarkm</p></div></a>
+    <a href="https://www.quora.com/profile/KM-SANTOSH-KUMAAR" target="_blank" class="socbtn"><span class="socic">&#x1F4AC;</span><div><p class="socnm">Quora</p><p class="soch">KM-SANTOSH-KUMAAR</p></div></a>
+    <a href="https://www.reddit.com/user/Wild-Reputation9915/" target="_blank" class="socbtn"><span class="socic">&#x1F534;</span><div><p class="socnm">Reddit</p><p class="soch">Wild-Reputation9915</p></div></a>
+    <a href="https://wa.me/919003469996" target="_blank" class="socbtn" style="border-color:rgba(37,211,102,.3)"><span class="socic">&#x1F4AC;</span><div><p class="socnm" style="color:#25D366">WhatsApp</p><p class="soch">9003469996</p></div></a>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contact">
+  <div class="ctabg">SKK</div>
+  <span class="sl2 rv">10 &mdash; Contact</span>
+  <h2 class="ctat rv">Let&rsquo;s work<br><span class="ac">together.</span></h2>
+  <p class="ctasub rv">WhatsApp <strong>9003469996</strong> for a free 30-minute strategy call &mdash; no commitment.<br>Open to freelance projects, full-time roles, and collaborations across Tamil Nadu and India.</p>
+  <div class="ctabt rv">
+    <a href="https://wa.me/919003469996" target="_blank" class="bwa">&#x1F4AC; WhatsApp 9003469996 &mdash; Free call</a>
+    <a href="mailto:santoshkumaarkm@gmail.com" class="bs">&#x1F4E7; santoshkumaarkm@gmail.com</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="ft">
+  <div class="ftr">
+    <div>
+      <div class="flo">SK<b>.</b></div>
+      <div class="fcp" style="margin-top:5px">&copy; 2026 SANTOSHKUMAAR KUMARAPPA &bull; Thanjavur, Tamil Nadu &bull; 9003469996 &bull; santoshkumaarkm@gmail.com</div>
+    </div>
+    <div class="flinks">
+      <a href="https://www.instagram.com/santoshkumaarkm" target="_blank">Instagram</a>
+      <a href="https://www.linkedin.com/in/km-santosh-kumaar-850202235" target="_blank">LinkedIn</a>
+      <a href="https://www.youtube.com/@SANTOSHKUMAAR03" target="_blank">YouTube</a>
+      <a href="https://medium.com/@santoshkumaarkm" target="_blank">Medium</a>
+      <a href="https://www.quora.com/profile/KM-SANTOSH-KUMAAR" target="_blank">Quora</a>
+      <a href="https://santoshkumaarkumarappa.com" target="_blank">Website</a>
+    </div>
+  </div>
+  <div class="fsoc">
+    <a href="https://www.instagram.com/santoshkumaarkm" target="_blank" class="fsb">&#x1F4F8; @santoshkumaarkm</a>
+    <a href="https://www.youtube.com/@SANTOSHKUMAAR03" target="_blank" class="fsb">&#x25B6;&#xFE0F; @SANTOSHKUMAAR03</a>
+    <a href="https://www.reddit.com/user/Wild-Reputation9915/" target="_blank" class="fsb">&#x1F534; Wild-Reputation9915</a>
+    <a href="https://www.facebook.com/share/1AqojXPubv/" target="_blank" class="fsb">&#x1F4D8; Facebook</a>
+    <a href="https://wa.me/919003469996" target="_blank" class="fsb" style="border-color:rgba(37,211,102,.3);color:#25D366">&#x1F4AC; 9003469996</a>
+    <a href="https://santoshkumaarkumarappa.com" target="_blank" class="fsb">&#x1F310; santoshkumaarkumarappa.com</a>
+  </div>
+</footer>
+
+<script>
+/* CURSOR */
+const c1=document.getElementById('cr1'),c2=document.getElementById('cr2');
+let mx=0,my=0,rx=0,ry=0;
+document.addEventListener('mousemove',e=>{mx=e.clientX;my=e.clientY;c1.style.left=mx+'px';c1.style.top=my+'px'});
+(function t(){rx+=(mx-rx)*.11;ry+=(my-ry)*.11;c2.style.left=rx+'px';c2.style.top=ry+'px';requestAnimationFrame(t)})();
+document.querySelectorAll('a,button').forEach(el=>{
+  el.addEventListener('mouseenter',()=>{c1.style.width='18px';c1.style.height='18px';c2.style.width='50px';c2.style.height='50px'});
+  el.addEventListener('mouseleave',()=>{c1.style.width='10px';c1.style.height='10px';c2.style.width='30px';c2.style.height='30px'});
+});
+
+/* PARTICLES */
+const cv=document.getElementById('cv'),ctx=cv.getContext('2d');
+let W,H,pts=[];
+function rsz(){W=cv.width=window.innerWidth;H=cv.height=window.innerHeight}
+rsz();window.addEventListener('resize',rsz);
+class P{
+  constructor(){this.r()}
+  r(){this.x=Math.random()*W;this.y=Math.random()*H;this.vx=(Math.random()-.5)*.28;this.vy=(Math.random()-.5)*.28;this.sz=Math.random()*1.1+.2;this.a=Math.random()*.6+.2}
+  step(){this.x+=this.vx;this.y+=this.vy;if(this.x<0||this.x>W||this.y<0||this.y>H)this.r()}
+  draw(){ctx.beginPath();ctx.arc(this.x,this.y,this.sz,0,Math.PI*2);ctx.fillStyle=`rgba(200,65,10,${this.a*.35})`;ctx.fill()}
+}
+for(let i=0;i<70;i++)pts.push(new P());
+function loop(){
+  ctx.clearRect(0,0,W,H);
+  pts.forEach(p=>{p.step();p.draw()});
+  for(let i=0;i<pts.length;i++)for(let j=i+1;j<pts.length;j++){
+    const d=Math.hypot(pts[i].x-pts[j].x,pts[i].y-pts[j].y);
+    if(d<120){ctx.beginPath();ctx.moveTo(pts[i].x,pts[i].y);ctx.lineTo(pts[j].x,pts[j].y);ctx.strokeStyle=`rgba(200,65,10,${(1-d/120)*.07})`;ctx.lineWidth=.5;ctx.stroke()}
+  }
+  requestAnimationFrame(loop);
+}
+loop();
+
+/* NAV */
+window.addEventListener('scroll',()=>document.getElementById('nav').classList.toggle('s',scrollY>50));
+
+/* MOBILE MENU */
+document.getElementById('hbg').addEventListener('click',()=>document.getElementById('mob').classList.add('o'));
+document.getElementById('mx').addEventListener('click',()=>document.getElementById('mob').classList.remove('o'));
+function cm(){document.getElementById('mob').classList.remove('o')}
+
+/* SCROLL REVEAL */
+const obs=new IntersectionObserver(es=>{es.forEach(e=>{if(e.isIntersecting)e.target.classList.add('v')})},{threshold:.1});
+document.querySelectorAll('.rv,.rvl').forEach(el=>obs.observe(el));
+
+/* SKILL BARS */
+const bobs=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){e.target.querySelectorAll('.skf').forEach(b=>b.style.width=b.dataset.w+'%');bobs.unobserve(e.target)}})
+},{threshold:.25});
+document.querySelectorAll('#skg').forEach(g=>bobs.observe(g));
+
+/* COUNTERS */
+const cobs=new IntersectionObserver(es=>{
+  es.forEach(e=>{if(e.isIntersecting){
+    e.target.querySelectorAll('.cnt').forEach(c=>{
+      const t=+c.dataset.t,d=1600;let s=null;
+      (function step(ts){if(!s)s=ts;const p=Math.min((ts-s)/d,1);c.textContent=Math.floor(p*t);if(p<1)requestAnimationFrame(step);else c.textContent=t})(performance.now());
+    });
+    cobs.unobserve(e.target);
+  }})
+},{threshold:.3});
+document.querySelectorAll('.stats').forEach(s=>cobs.observe(s));
+
+/* SMOOTH SCROLL */
+document.querySelectorAll('a[href^="#"]').forEach(a=>a.addEventListener('click',e=>{
+  const el=document.querySelector(a.getAttribute('href'));
+  if(el){e.preventDefault();el.scrollIntoView({behavior:'smooth',block:'start'})}
+}));
+</script>
+</body>
+</html>
